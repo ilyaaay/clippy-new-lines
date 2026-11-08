@@ -111,6 +111,8 @@ fn main() -> anyhow::Result<()> {
       println!(
         "\n\x1b[1;33mИсправьте эти предупреждения. Старые warnings не блокируют коммит.\x1b[0m"
       );
+
+      std::process::exit(1);
     };
   }
 
